@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+    
+    <!-- N'oublie pas de changer le titre de tes pages des différents types de projets -->
+    <title>Bienvenue sur le site de Roxanne Anèse / Projets photographiques</title>
+</head>
+<body>
+        <!-- On retrouve notre Header ici -->
+        <header><a href="index.html" id="retour">Retour</a><h1>Roxanne Anèse</h1><h2>/ Photographies</h2></header>
+
+        <!-- Et on retrouve notre élément Main aussi -->
+        <main>
+
+            <!-- Ici notre module projet, qui contient deux div, texte et image. la div image contient à sont tou une div slider. Voir les CSS pour plus d'infos -->
+            <div class="projet">
+                <div class="texte"><h3>Escapades</h3>Cette série aborde les six sens au travers du regard animal. C’est par l’errance que j’ai pu prendre ces photos sur le vif, sans mise en scène et sans présence humaine visible. Le texte que j’ai écrit sous-titre les images avec des phrases mystérieuses et fragmentées, ce qui permet de les lire de différentes manières. Ajouter du texte aux photos est un moyen de créer une narration décomposée qui peut laisser son lecteur rêveur en pensant à ces rencontres en forêt.</div>
+                <div class="image">
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/photographie_1.jpg?v=1649070376372" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/photographie_2.jpg?v=1649070386692" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/photographie_3.jpg?v=1649070395973" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/photographie_4.jpg?v=1649070406197" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/photographie_5.jpg?v=1649070418400" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/photographie_6.jpg?v=1649070431346" /></li>
+                        </ul>
+                      </div> <!-- Fin du carrousel/slider -->
+                </div> <!-- Fin de la zone image -->
+            </div> <!-- Fin du module projet -->   
+        
+        </main><!-- Fin du Main -->
+  
+        
+<!-- Script jQuery / Nécessaire au JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+<!-- FlexSlider / JS supplémentaire nécessaire au Slider/carrousel-->
+<script defer src="jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    SyntaxHighlighter.all();
+  });
+  $(window).load(function () {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      start: function (slider) {
+        $('body').removeClass('loading');
+      }
+    });
+  });
+</script>
+</body>
+</html>

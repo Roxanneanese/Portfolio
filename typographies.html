@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+    
+    <!-- N'oublie pas de changer le titre de tes pages des différents types de projets -->
+    <title>Bienvenue sur le site de Roxanne Anèse / Projets typo</title>
+</head>
+<body>
+        <!-- On retrouve notre Header ici -->
+        <header><a href="index.html" id="retour">Retour</a><h1>Roxanne Anèse</h1><h2>/ Typographies</h2></header>
+
+        <!-- Et on retrouve notre élément Main aussi -->
+        <main>
+
+            <!-- Ici notre module projet, qui contient deux div, texte et image. la div image contient à sont tou une div slider. Voir les CSS pour plus d'infos -->
+            <div class="projet">
+                <div class="texte"><h3>Robots</h3>Ce leporello utilise un caractère que j’ai dessiné à partir d’une ancienne publicité du Hero1, un robot pédagogique. Ce point de départ m’a amené à travailler sur l’œuvre Les androïdes rêvent-t-ils de moutons électriques ? : titre de Philip K. Dick, qui a fait l’objet de deux adaptations cinématographiques. Cet univers nous plonge dans un monde où les androïdes deviennent indissociables des humains : seul un test d’empathie permet de faire la différence. à travers une scène commune aux trois versions, on observe son évolution. Dans le film de 2017, le test sert à détecter une instabilité émotionnelle : ce changement marque le début de la considération des androïdes comme des êtres vivants.</div>
+                <div class="image">
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/typo_2.jpg?v=1649074763846" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/typo_3.jpg?v=16490747758112" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/typo_4.jpg?v=1649074785901" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/typo_6.jpg?v=1649074795631" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/typo_7.jpg?v=1649074805814" /></li>
+                        </ul>
+                      </div> <!-- Fin du carrousel/slider -->
+                </div> <!-- Fin de la zone image -->
+            </div> <!-- Fin du module projet -->
+        
+        </main><!-- Fin du Main -->
+  
+        
+<!-- Script jQuery / Nécessaire au JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+<!-- FlexSlider / JS supplémentaire nécessaire au Slider/carrousel-->
+<script defer src="jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    SyntaxHighlighter.all();
+  });
+  $(window).load(function () {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      start: function (slider) {
+        $('body').removeClass('loading');
+      }
+    });
+  });
+</script>
+</body>
+</html>

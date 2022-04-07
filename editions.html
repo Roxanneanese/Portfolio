@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+    
+    <!-- N'oublie pas de changer le titre de tes pages des différents types de projets -->
+    <title>Bienvenue sur le site de Roxanne Anèse / Projets d'éditions</title>
+</head>
+<body>
+        <!-- On retrouve notre Header ici -->
+        <header><a href="index.html" id="retour">Retour</a><h1>Roxanne Anèse</h1><h2>/ Éditions</h2></header>
+
+        <!-- Et on retrouve notre élément Main aussi -->
+        <main>
+
+            <!-- Ici notre module projet, qui contient deux div, texte et image. la div image contient à sont tou une div slider. Voir les CSS pour plus d'infos -->
+            <div class="projet">
+                <div class="texte"><h3>1, 2, 3, 4</h3>Cette édition rassemble les quatre pièces de théâtre de la tétralogie Le Sang des Promesses écrite par Wajdi Mouawad, metteur en scène libano-québécois. Seuls les passsages où les morts parlent sont conservés. Les fantômes des différents livres dialoguent alors entre eux, provoquant des scènes parfois absurdes, drôles, ou tristes. Le séquençage de cette édition reprend celui des objets imprimés : sur une même planche, on lit ce qui se dit à la même page de chacun des livres.</div>
+                <div class="image">
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/edition_1.jpg?v=1648914236735" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/edition_2.jpg?v=1648914241555" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/edition_3.jpg?v=1648914245092" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/edition_4.jpg?v=1648914249088" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/edition_5.jpg?v=1648914253014.jpg?v=1648914249088" /></li>
+                        </ul>
+                      </div> <!-- Fin du carrousel/slider -->
+                </div> <!-- Fin de la zone image -->
+            </div> <!-- Fin du module projet -->
+       
+            
+            <!-- Ici un second module projet -->
+            <div class="projet">
+                <div class="texte"><h3>Les Énergies</h3> Balade dans les ateliers des troisièmes années art à l’Ésad de Reims et échange avec Eva Chanoir et Youna Dacher. Nous avons discuté des énergies, de la magie, des femmes et des sorcières. Cette édition permet de restituer cet entretien autour de deux temporalités. Les pages du haut font la visite de leur atelier au travers d’une déambulation photographique. Les pages du bas présentent l’entretien. Chaque personne s’est vue attribuée une couleur différente imprimée en risographie.</div>
+                <div class="image">
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/energies_1.jpg?v=1648915749545" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/energies_2.jpg?v=1648915755155" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/energies_3.jpg?v=1648915762921" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/energies_4.jpg?v=1648915767487" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/energies_5.jpg?v=1648915772895" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/energies_6.jpg?v=1648915778775" /></li>
+                        </ul>
+                      </div> <!-- Fin du carrousel/slider -->
+                </div> <!-- Fin de la zone image -->
+            </div> <!-- Fin du module projet -->
+   
+        
+        </main><!-- Fin du Main -->
+  
+        
+<!-- Script jQuery / Nécessaire au JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+<!-- FlexSlider / JS supplémentaire nécessaire au Slider/carrousel-->
+<script defer src="jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    SyntaxHighlighter.all();
+  });
+  $(window).load(function () {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      start: function (slider) {
+        $('body').removeClass('loading');
+      }
+    });
+  });
+</script>
+</body>
+</html>

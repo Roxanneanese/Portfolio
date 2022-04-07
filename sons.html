@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+    
+    <!-- N'oublie pas de changer le titre de tes pages des différents types de projets -->
+    <title>Bienvenue sur le site de Roxanne Anèse / Projets sonores</title>
+</head>
+<body>
+        <!-- On retrouve notre Header ici -->
+        <header><a href="index.html" id="retour">Retour</a><h1>Roxanne Anèse</h1><h2>/ Sons</h2></header>
+
+        <!-- Et on retrouve notre élément Main aussi -->
+        <main>
+
+            <!-- Ici notre module projet, qui contient deux div, texte et image. la div image contient à sont tou une div slider. Voir les CSS pour plus d'infos -->
+            <div class="projet">
+                <div class="texte"><h3>Fade Out</h3>La bande magnétique est l’élément conducteur de ce projet. C’est un support qui nécessite des outils particuliers pour le manipuler, le découper, le démagnétiser, le réparer. Les sons que j’ai pu produire explorent sa matérialité, ses forces et ses faiblesses. à partir d’expérimentations, j’ai trouvé une manière de partitionner les sons que je voulais réaliser. Le découpage et le collage se sont révélés être des moyens graphiques proches du mode de production sonore.
+               <p class="player">
+      Flanger Power
+      <audio controls>
+        <source src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/partition1_flanger-power.mp3?v=1649077477638" type="audio/mpeg">
+      Votre navigateur ne peut pas lire de fichiers audio.
+      </audio>
+                  </p>
+                  <p class="player">
+      Loop Loop Loop
+      <audio controls>
+        <source src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/partition2_loop-loop-loop.mp3?v=1649077759299">
+      Votre navigateur ne peut pas lire de fichiers audio.
+      </audio>
+                  </p>
+                    <p class="player">
+     Cut
+      <audio controls>
+        <source src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/partition3_lart-de-la-coupe.mp3?v=1649077897524">
+      Votre navigateur ne peut pas lire de fichiers audio.
+      </audio>
+                  </p>
+                
+              </div>
+                <div class="image">
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/son_1.jpg?v=1649069911609" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/son_2.jpg?v=1649069933763" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/son_3.jpg?v=1649069952256" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/son_4.jpg?v=1649069968648" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/son_5.jpg?v=1649069981682" /></li>
+                          <li><img src="https://cdn.glitch.global/39fd6154-42ed-4ca9-ab9c-3fb7cb2067c6/son_6.jpg?v=1649069989885" /></li>
+                        </ul>
+                      </div> <!-- Fin du carrousel/slider -->
+                </div> <!-- Fin de la zone image -->
+            </div> <!-- Fin du module projet -->
+        
+        </main><!-- Fin du Main -->
+  
+        
+<!-- Script jQuery / Nécessaire au JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+<!-- FlexSlider / JS supplémentaire nécessaire au Slider/carrousel-->
+<script defer src="jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    SyntaxHighlighter.all();
+  });
+  $(window).load(function () {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      start: function (slider) {
+        $('body').removeClass('loading');
+      }
+    });
+  });
+</script>
+</body>
+</html>
